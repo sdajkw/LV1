@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+// ZADATAK 1
+int turnir(int a, int b, int c)
+{
+    if (a >= 40 && b >= 40 && c >= 40 && a + b + c >= 200)
+        return 1;
+    return 0;
+}
+
+// ZADATAK 2
+int zona(int x, int y)
+{
+    if (x >= 2 && x <= 8 && y >= 3 && y <= 7)
+        return 1;
+    return 0;
+}
+
+// ZADATAK 3
+void cilj(int x, int a, int b)
+{
+    int A = x - a;
+    int B = x - b;
+
+    if (A < 0) A = -A;
+    if (B < 0) B = -B;
+
+    if (A < B)
+        cout << "A\n";
+    else if (B < A)
+        cout << "B\n";
+    else
+        cout << "JEDNAKO\n";
+}
+
+int main()
+{
+    // ZADATAK 1
+    cout << turnir(75, 82, 51) << endl;
+    cout << turnir(100, 100, 35) << endl;
+    cout << turnir(60, 70, 70) << endl;
+    cout << turnir(40, 40, 100) << endl;
+
+    // ZADATAK 2
+    cout << zona(5, 5) << endl;
+    cout << zona(2, 7) << endl;
+    cout << zona(9, 5) << endl;
+    cout << zona(2, 2) << endl;
+
+    // ZADATAK 3
+    cilj(10, 4, 13);
+    cilj(10, 7, 15);
+    cilj(10, 5, 15);
+
+}
