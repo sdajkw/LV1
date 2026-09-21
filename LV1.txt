@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//LV 1 vjezba, Benjamin Jan Perhoč, funkcija uzima brojeve a vraca TRUE/FALSE
 
 // ZADATAK 1
 int turnir(int a, int b, int c)
